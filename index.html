@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style/css/style.css">
+    <title>Dialog Windows And Colors</title>
+</head>
+<body>
+    <header>
+        <h1>
+            <p><i><sub>!</sub>Dialog Windows and Colors<sup>!</sup></i></p>
+        </h1>
+    </header>
+    <main>
+        <div>
+            <section>
+                <button id="window_prompt_name" onclick="addSpinName()">
+                    <p>Kliknij aby podac imnie</p>
+                </button>
+                <div class="spin_object" id="spin_name"></div>
+            </section>
+            <section>
+                <div id="document_write_name">
+                    <p id="document_write_name_place"></p>
+                </div>
+            </section>
+            <section>
+                <button id="window_prompt_color" onclick="addSpinColor()">
+                    <p>Kliknij aby podac kolor</p>
+                </button>
+                <div class="spin_object" id="spin_color"></div>
+            </section>
+            <section>
+                <div id="document_write_color">
+                    <p id="document_write_color_place"></p>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+<script src="Scripts/script.js"></script>
+</html>

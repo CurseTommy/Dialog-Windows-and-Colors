@@ -1,0 +1,180 @@
+:root {
+  --aqua: #0ff;
+  --blue: #00f;
+  --green: #0f0;
+  --red: #f00;
+  --fuchsia: #f0f;
+  --yellow: #ff0;
+}
+
+.aqua {
+  color: var(--aqua);
+}
+
+.blue {
+  color: var(--blue);
+}
+
+.green {
+  color: var(--green);
+}
+
+.red {
+  color: var(--red);
+}
+
+.fuchsia {
+  color: var(--fuchsia);
+}
+
+.yellow {
+  color: var(--yellow);
+}
+
+header {
+  width: 100vw;
+  padding: 1rem;
+  text-align: left;
+}
+header h1 {
+  background: linear-gradient(313deg, rgb(10, 83, 167) 50%, rgb(255, 255, 255) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 38px;
+}
+
+main {
+  width: 100vw;
+  height: 60%;
+}
+main div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 3rem;
+  height: 100%;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 13rem;
+  height: 13rem;
+  border: 2px solid #383535;
+  background: rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.31);
+  border-radius: 1rem;
+}
+section button {
+  text-decoration: underline;
+}
+section button, section div {
+  width: 9rem;
+  height: 4rem;
+  background-color: #262626;
+  background: rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  color: #fff;
+  border: none;
+  padding: 0.5rem;
+  font-size: 18px;
+}
+
+div.spin_object {
+  position: absolute;
+  z-index: -9999;
+  top: 10rem;
+  left: 8rem;
+  width: 50%;
+  height: 50%;
+  background: rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.31);
+  border-radius: 25%;
+  -webkit-transition: 0.5s all linear;
+  transition: 0.5s all linear;
+  color: var(--aqua);
+  font-weight: bold;
+}
+
+div.spin_object.spin {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: 0.8s all linear;
+  transition: 0.8s all linear;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  align-items: center;
+  gap: 3rem;
+  background: rgb(38, 38, 38);
+  background: linear-gradient(16deg, rgb(38, 38, 38) 0%, rgb(37, 92, 153) 50%, rgb(126, 163, 204) 100%);
+  height: 100vh;
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */

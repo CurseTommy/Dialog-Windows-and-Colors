@@ -1,0 +1,66 @@
+main{
+    width: 100vw;
+    height: 60%;
+
+    div{
+        @include displayFlex;
+        flex-wrap: wrap;
+        gap: 3rem;
+        height: 100%;
+    }
+}
+
+section{
+    @include displayFlex;
+    position: relative;
+    width: 13rem;
+    height: 13rem;
+    border: 2px solid #383535;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 0, 0, 0.31);
+    border-radius: 1rem;
+
+    button{
+        text-decoration: underline;
+    }
+
+    button, div{
+        width: 9rem;
+        height: 4rem;
+        background-color: #262626;
+        background: rgba(0, 0, 0, 0.3);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+        backdrop-filter: blur(10px);
+        border-radius: 1rem;
+        color: #fff;
+        border: none;
+        padding: .5rem;
+        font-size: 18px;
+    }
+
+}
+
+div.spin_object{
+
+    position: absolute;
+    z-index: -9999;
+    top: 10rem;
+    left: 8rem;
+    width: 50%;
+    height: 50%;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 0, 0, 0.31);
+    border-radius: 25%;
+    transition: .5s all linear;
+    color: var(--aqua);
+    font-weight: bold;
+}
+
+div.spin_object.spin{
+    transform: rotate(360deg);
+    transition: .8s all linear;
+}

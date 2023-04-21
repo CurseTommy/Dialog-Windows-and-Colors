@@ -1,0 +1,22 @@
+@import "_mixins";
+@import "_variables";
+
+//Layout
+
+@import "Layout/header";
+@import "Layout/main";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    @include displayFlex(column, flex-start);
+    gap: 3rem;
+    background: rgb(38,38,38);
+background: linear-gradient(16deg, rgba(38,38,38,1) 0%, rgba(37,92,153,1) 50%, rgba(126,163,204,1) 100%);
+    height: 100vh;
+    color: #fff;
+}

@@ -1,0 +1,33 @@
+// Switch Colors
+:root{
+    --aqua: #0ff;
+    --blue: #00f;
+    --green: #0f0;
+    --red: #f00;
+    --fuchsia: #f0f;
+    --yellow: #ff0;
+}
+
+.aqua{
+    color: var(--aqua);
+}
+
+.blue{
+    color: var(--blue);
+}
+
+.green{
+    color: var(--green);
+}
+
+.red{
+    color: var(--red);
+}
+
+.fuchsia{
+    color: var(--fuchsia);
+}
+
+.yellow{
+    color: var(--yellow);
+}
